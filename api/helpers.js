@@ -1,7 +1,7 @@
 import Task from '../lib/Task.js'
 
 function getContext() {
-  return Task.stack[Task.stack.length - 1].context;
+  return Task.current.context;
 }
 
 export function getConfig () {
