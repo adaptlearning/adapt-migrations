@@ -1,6 +1,6 @@
 import Task from '../lib/Task.js'
 
-export function getContext() {
+function getContext() {
   return Task.stack[Task.stack.length - 1].context;
 }
 
