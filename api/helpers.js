@@ -5,3 +5,7 @@ export function getConfig (content) {
 export function getCourse(content) {
   return content.find(({ _type }) => _type === 'course');
 }
+
+export function getComponents(content, componentName) {
+  return content.filter(({ _component }) => _component === componentName);
+}
