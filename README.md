@@ -91,7 +91,7 @@ We define variables and steps in the definition phase of the migration script (t
 
 `whereFromPlugins` is a single step in a task, it will be executed multiple times as the migrations progress, this is to find out whether the task is applicable and whether the task should proceed through all of the steps until conclusion. 
 
-Tasks and steps have three results: success (true), stop (false) or error (throw Error). Using those return values and having some of the utility functions marked up as "where" functions, we can selectively define and execute a variety of migrations scripts, for a variety of courses, with a fun array of predictable outcomes.
+Tasks and steps have three results: success (true), stop (false) or error (throw Error). Using those return values and having some of the step functions marked up as "where" functions, we can selectively define and execute a variety of migrations scripts, for a variety of courses, with a fun array of predictable outcomes.
 
 References:
 Migration files are loaded: https://github.com/adaptlearning/adapt-migrations/blob/1b156d8dad82f370c974f630adb3d58eaa8517b8/lib/Task.js#L293-L296
