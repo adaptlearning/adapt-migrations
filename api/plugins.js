@@ -1,5 +1,5 @@
 import { deferOrRunWrap, successStopOrErrorWrap } from '../lib/lifecycle.js'
-const VERSION_CHECK = /^\d+\.\d+\.\d+$/
+import { valid } from 'semver'
 
 export function removePlugin (description, config) {
   return deferOrRunWrap(function (context) {
@@ -17,7 +17,7 @@ export function addPlugin (description, config) {
   return deferOrRunWrap(function (context) {
     return successStopOrErrorWrap('addPlugin', description, async () => {
       if (!description || !config) throw new Error('addPlugin - incorrectly configured')
-      if (!VERSION_CHECK.test(config.version)) throw new Error(`addPlugin - invalid version number ${config.version}`)
+      if (!valid(config.version)) throw new Error(`addPlugin - invalid version number ${config.version}`)
 
       const newPlugin = context.toPlugins.find(plugin => (plugin.name === config.name))
       if (!newPlugin) throw new Error(`addPlugin - ${config.name} not found`)
@@ -32,7 +32,7 @@ export function updatePlugin (description, config) {
   return deferOrRunWrap(function (context) {
     return successStopOrErrorWrap('updatePlugin', description, async () => {
       if (!description || !config) throw new Error('updatePlugin - incorrectly configured')
-      if (!VERSION_CHECK.test(config.version)) throw new Error(`updatePlugin - invalid version number ${config.version}`)
+      if (!valid(config.version)) throw new Error(`updatePlugin - invalid version number ${config.version}`)
 
       context.fromPlugins.forEach(plugin => {
         if (plugin.name !== config.name) return
