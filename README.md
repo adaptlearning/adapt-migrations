@@ -22,9 +22,9 @@ Functions:
 * `updatePlugin(description, pluginConfig)` Update a plugin
 * `removePlugin(description, pluginConfig)` Remove a plugin
 * `throwError(description)` Throw an error
-* `testSuccessWhere({ fromPlugins, toPlugins, content })` Supply some tests content which should end in success
-* `testStopWhere({ fromPlugins, toPlugins, content })` Supply some tests content which should end prematurely
-* `testErrorWhere({ fromPlugins, toPlugins, content })` Supply some tests content which will trigger an error
+* `testSuccessWhere(description, { fromPlugins, toPlugins, content })` Supply some tests content which should end in success
+* `testStopWhere(description, { fromPlugins, toPlugins, content })` Supply some tests content which should end prematurely
+* `testErrorWhere(description, { fromPlugins, toPlugins, content })` Supply some tests content which will trigger an error
 
 Arguments:
 * `describeFunction = () => {}` Function body has a collection of migration script functions
