@@ -31,7 +31,6 @@ export function testStopWhere (description, {
     return new TaskTest({
       description,
       shouldStop: true,
-      shouldRun: false,
       fromPlugins,
       toPlugins,
       content
