@@ -10,7 +10,7 @@ export function testSuccessWhere (description, {
   content
 }) {
   return deferOrRunWrap(() => {
-    logger.debug(`Tests -- testSuccessWhere ${description}`)
+    logger.info(`Test success where -- ${description}`)
     return new TaskTest({
       description,
       shouldRun: true,
@@ -27,7 +27,7 @@ export function testStopWhere (description, {
   content
 }) {
   return deferOrRunWrap(() => {
-    logger.debug(`Tests -- testStopWhere ${description}`)
+    logger.info(`Test stop where -- ${description}`)
     return new TaskTest({
       description,
       shouldStop: true,
@@ -45,7 +45,7 @@ export function testErrorWhere (description, {
   content
 }) {
   return deferOrRunWrap(() => {
-    logger.debug(`Tests -- testErrorWhere ${description}`)
+    logger.info(`Test error where -- ${description}`)
     return new TaskTest({
       description,
       shouldError: true,
