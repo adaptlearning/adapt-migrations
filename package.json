@@ -3,6 +3,9 @@
   "type": "module",
   "main": "index.js",
   "version": "1.2.0",
+  "scripts": {
+    "postinstall": "node npm_hooks/postinstall.js"
+  },
   "devDependencies": {
     "eslint": "^8.42.0",
     "eslint-config-standard": "^17.1.0",
