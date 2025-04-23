@@ -3,6 +3,7 @@
   "type": "module",
   "main": "index.js",
   "version": "1.3.0",
+  "repositoryUrl": "https://github.com/qasim-at-tci/semantic-release-test.git",
   "dependencies": {
     "fs-extra": "^11.1.1",
     "globs": "^0.1.4",
@@ -20,7 +21,7 @@
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "conventional-changelog-eslint": "^3.0.9",
-    "semantic-release": "^19.0.3"
+    "semantic-release": "^21.0.1"
   },
   "release": {
     "plugins": [
