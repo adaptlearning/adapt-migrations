@@ -2,7 +2,7 @@
   "name": "adapt-migrations",
   "type": "module",
   "main": "index.js",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adaptlearning/adapt-migrations.git"
