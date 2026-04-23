@@ -14,12 +14,13 @@
     "semver": "^7.5.4"
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-eslint": "^6.1.0",
     "eslint": "^8.42.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "@semantic-release/git": "^10.0.1",
     "semantic-release": "^25.0.2"
   },
   "release": {
