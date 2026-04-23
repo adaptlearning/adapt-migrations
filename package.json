@@ -2,8 +2,11 @@
   "name": "adapt-migrations",
   "type": "module",
   "main": "index.js",
-  "version": "1.4.0",
-  "repository": "github:adaptlearning/adapt-migrations",
+  "version": "1.4.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaptlearning/adapt-migrations.git"
+  },
   "dependencies": {
     "fs-extra": "^11.1.1",
     "globs": "^0.1.4",
