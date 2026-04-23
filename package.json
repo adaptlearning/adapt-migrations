@@ -3,7 +3,7 @@
   "type": "module",
   "main": "index.js",
   "version": "1.4.0",
-  "repositoryUrl": "https://github.com/adaptlearning/adapt-migrations.git",
+  "repository": "github:adaptlearning/adapt-migrations",
   "dependencies": {
     "fs-extra": "^11.1.1",
     "globs": "^0.1.4",
@@ -16,13 +16,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.5",
-    "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "conventional-changelog-eslint": "^3.0.9",
-    "semantic-release": "^21.0.1"
+    "semantic-release": "^25.0.2"
   },
   "release": {
     "plugins": [
