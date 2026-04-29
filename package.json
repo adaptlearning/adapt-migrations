@@ -11,7 +11,7 @@
     "fs-extra": "^11.1.1",
     "globs": "^0.1.4",
     "pkg-up": "^3.1.0",
-    "semver": "^7.5.4"
+    "semver": "^7.7.4"
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
