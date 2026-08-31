@@ -20,7 +20,7 @@ export function whereFromPlugin (description, callbackOrConfig) {
       const config = callbackOrConfig
       return fromPlugins.some(plugin => {
         if (config.name && plugin.name !== config.name) return false
-        if (config.version && !semver.satisfies(plugin.version, config.version)) return false
+        if (config.version && !semver.satisfies(plugin.version, config.version, { includePrerelease: true })) return false
         return true
       })
     })
@@ -38,7 +38,7 @@ export function whereToPlugin (description, callbackOrConfig) {
       const config = callbackOrConfig
       return toPlugins.some(plugin => {
         if (config.name && plugin.name !== config.name) return false
-        if (config.version && !semver.satisfies(plugin.version, config.version)) return false
+        if (config.version && !semver.satisfies(plugin.version, config.version, { includePrerelease: true })) return false
         return true
       })
     })
